@@ -2,6 +2,7 @@
  * Основная функция для совершения запросов по Yandex API.
  * */
 const createRequest = (options = {}) => {
+<<<<<<< HEAD
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
 
@@ -39,3 +40,7 @@ const createRequest = (options = {}) => {
     options.callback?.(err, null);
   }
 };
+=======
+
+};
+>>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
