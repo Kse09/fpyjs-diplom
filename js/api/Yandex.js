@@ -9,7 +9,6 @@ class Yandex {
   /**
    * Метод формирования и сохранения токена для Yandex API
    */
-<<<<<<< HEAD
   static getToken() {
     let tokenUser = localStorage.getItem('tokenUser');
     if (!tokenUser) {
@@ -19,16 +18,11 @@ class Yandex {
       }
     }
     return tokenUser;
-=======
-  static getToken(){
-
->>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
   }
 
   /**
    * Метод загрузки файла в облако
    */
-<<<<<<< HEAD
   static uploadFile(path, url, callback) {
     createRequest({
       method: 'POST',
@@ -42,16 +36,11 @@ class Yandex {
       },
       callback: callback,
     });
-=======
-  static uploadFile(path, url, callback){
-
->>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
   }
 
   /**
    * Метод удаления файла из облака
    */
-<<<<<<< HEAD
   static removeFile(path, callback) {
     createRequest({
       method: 'DELETE',
@@ -64,16 +53,11 @@ class Yandex {
       },
       callback: callback,
     });
-=======
-  static removeFile(path, callback){
-
->>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
   }
 
   /**
    * Метод получения всех загруженных файлов в облаке
    */
-<<<<<<< HEAD
   static getUploadedFiles(callback) {
     createRequest({
       method: 'GET',
@@ -83,16 +67,11 @@ class Yandex {
       },
       callback: callback,
     });
-=======
-  static getUploadedFiles(callback){
-
->>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
   }
 
   /**
    * Метод скачивания файлов
    */
-<<<<<<< HEAD
   static downloadFileByUrl(url) {
     const link = document.createElement('a');
     link.href = url;
@@ -100,9 +79,5 @@ class Yandex {
     document.body.appendChild(link);
     link.click();
     link.remove();
-=======
-  static downloadFileByUrl(url){
-
->>>>>>> a0b9213dccd420fcec73bc3d7334eb07ba9449f3
   }
 }
